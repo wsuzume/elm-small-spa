@@ -9,7 +9,7 @@ can be used for educational purpose, or can be used as the first template of you
 ## Usage
 Please install Docker Host in the first.
 
-### Build development environment
+### Build development environment container image
 
 ```
 $ make build
