@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Elm small SPA</title>
+  <script src="main.js"></script>
+</head>
+<body>
+  <script>
+    var app = Elm.Main.init({
+      flags: { tag: "init", content: "init flags" }
+    });
+
+    app.ports.elm2js.subscribe(function(data) {
+      console.log('fromElm:', data);
+    });
+
+    function js2elm(data) {
+      app.ports.js2elm.send(data);
+    }
+
+    function echo() {
+      js2elm({tag: "echo", content: "hello"});
+    }
+  </script>
+  <button onclick="echo()">js2elm message</button>
+</body>
+</html>
