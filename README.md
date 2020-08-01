@@ -6,6 +6,8 @@
 
 can be used for educational purpose, or can be used as the first template of your project.
 
+All development environment is built on Docker.
+
 ## Usage
 Please install Docker Host in the first.
 
