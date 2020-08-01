@@ -32,3 +32,5 @@ $ make elm
 ```
 $ make serve
 ```
+
+Ctrl+C to stop elm-live.

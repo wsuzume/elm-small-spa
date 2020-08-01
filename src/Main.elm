@@ -1,4 +1,4 @@
-port module Main exposing (Flags, Model(..), Msg(..), init, main, subscriptions, update, view)
+port module Main exposing (main, elm2js, js2elm)
 
 import Browser
 import Browser.Navigation as Nav
